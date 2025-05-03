@@ -1,0 +1,8 @@
+#!/bin/bash
+# chmod +x wipe_drive_script.sh
+# if=/dev/zero or if=/dev/random 
+# 2> makes stderr output into file
+# bs=4096 block size, adviced to use drives default for speed
+# "&" at the end of line makes script run in background
+
+dd if=/dev/zero of=/dev/sda bs=4096 status=progress 2> error.log &
