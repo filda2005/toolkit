@@ -1,0 +1,6 @@
+df -h
+du
+fsdisk -l
+lsblk
+lsusb
+top
